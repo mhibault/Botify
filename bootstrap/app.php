@@ -46,6 +46,8 @@ $app->singleton(
     App\Console\Kernel::class
 );
 
+$app->withEloquent();
+
 /*
 |--------------------------------------------------------------------------
 | Register Middleware
