@@ -47,7 +47,7 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
 
-        if ($e instanceof NotFoundHttpException)
+        if ($exception instanceof NotFoundHttpException)
         {
             return response()->json(['error'=>'not_found','error_message'=>'Please check the URL you submitted'], 404);
         }
